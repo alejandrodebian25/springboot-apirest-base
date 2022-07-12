@@ -1,4 +1,4 @@
-package com.et.app.springboot.apirest.entity;
+package com.et.app.springboot.apirest.entities;
 
 import java.io.Serializable;
 import java.util.Set;
