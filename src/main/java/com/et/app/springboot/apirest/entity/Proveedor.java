@@ -32,8 +32,11 @@ public class Proveedor implements Serializable {
     @Column(name = "nombre_proveedor")
     private String nombreProveedor;
 
+    /* Relations Proveedor 1:1 Direccion */
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "direccion_id", referencedColumnName = "direccion_id")
     private Direccion direccion;
+
+    /* Relations Proveedor 1:N Productos */
 
 }
